@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>谷底飞龙</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: '谷底飞龙',
+            repo: 'https://github.com/JackXJR/myblogs',
+            coverpage: ['/', '/zh-cn/'],
+            loadNavbar: true,
+            loadSidebar: true, // 加载自定义侧边栏
+            subMaxLevel: 5, // 生成目录的最大层级
+            mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
+            alias: {
+                // 定义路由别名，可以更自由的定义路由规则。 支持正则
+                '/.*/_sidebar.md': '/_sidebar.md', //防止意外回退
+                '/.*/_navbar.md': '/_navbar.md',
+            },
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!--全文搜索,直接用官方提供的无法生效-->
+    <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+    <!-- 复制到剪贴板 -->
+    <script src="https://unpkg.com/docsify-copy-code"></script>
+    <!-- 图片缩放 -->
+    <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+    <!-- 字数统计 -->
+    <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+</body>
+
+</html>
