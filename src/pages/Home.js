@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from './components/Button'
+import Title from './components/Title'
 
 export default class Home extends React.Component {
   gotoPage(pathname, query) {
@@ -6,25 +8,27 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Home=componentDidMount')
+    console.log('Home首页加载完成')
   }
 
   render() {
     return (
       <div style={styles.container}>
-        <button
-          style={styles.button}
-          onClick={() => this.gotoPage('/detail/1234')}
-        >
-          push 打开 Detail
-        </button>
-
-        <button
-          style={styles.button}
-          onClick={() => this.gotoPage('/present/detail', { id: 1234 })}
-        >
-          present 打开 Detail
-        </button>
+        <Title title="Home首页" />
+        <Button
+          title="无动画打开页面"
+          onClick={() => this.gotoPage('/detail/无动画')}
+        />
+        <Button
+          title="Push动画打开页面"
+          onClick={() => this.gotoPage('/push/detail/Present动画/1234')}
+        />
+        <Button
+          title="Present动画打开页面"
+          onClick={() =>
+            this.gotoPage('/present/detail', { type: 'Present动画', id: 1234 })
+          }
+        />
       </div>
     )
   }
@@ -33,13 +37,9 @@ export default class Home extends React.Component {
 const styles = {
   container: {
     display: 'flex',
-    backgroundColor: 'yellow',
     height: '100vh',
     width: '100vw',
     overflow: 'hidden',
-    justifyContent: 'center',
-    alignItems: 'center',
     flexDirection: 'column',
   },
-  button: { marginTop: 10 },
 }

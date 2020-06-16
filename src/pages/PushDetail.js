@@ -15,7 +15,7 @@ export default class Detail extends React.Component {
   render() {
     return (
       <div style={styles.container}>
-        <Title title="无动画页面" />
+        <Title title="Push动画页面" />
         <Button title="回到Home首页" onClick={() => this.goBack()} />
       </div>
     )
@@ -25,11 +25,10 @@ export default class Detail extends React.Component {
 const styles = {
   container: {
     display: 'flex',
-    backgroundColor: '#ff954e',
+    backgroundColor: 'rgb(97,218,251)',
     height: '100vh',
     width: '100vw',
     overflow: 'hidden',
     flexDirection: 'column',
   },
-  button: { marginTop: 10 },
 }

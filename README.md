@@ -1,6 +1,6 @@
 ### 概述
 
-[react-router-animation 项目简介及原理解析](https://jackxjr.github.io/react-router-animation/)
+[react-router-animation 项目简介及原理解析](https://jackxjr.github.io/react-router-animation/#/README)
 
 > 外部使用路由功能极其简单，只需要`添加 Router` 和 `设置路由配置项` 两步操作即可。在 React-Router 的基础上，增加扩展功能：
 >

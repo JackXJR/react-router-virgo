@@ -3,53 +3,80 @@
 }
 
 /**
+ * 无动画切换
+ */
+.forward-no-animation-enter {
+  opacity: 1;
+}
+
+.forward-no-animation-enter-active {
+  opacity: 1;
+}
+
+.forward-no-animation-exit {
+  opacity: 0;
+}
+
+.forward-no-animation-exit-active {
+  opacity: 0;
+}
+
+.back-no-animation-enter {
+  opacity: 1;
+}
+
+.back-no-animation-enter-active {
+  opacity: 1;
+}
+
+.back-no-animation-exit {
+  opacity: 0;
+}
+
+.back-no-animation-exit-active {
+  opacity: 0;
+}
+
+/**
  * 右侧淡入，右侧淡出
  */
 .forward-from-right-enter {
   z-index: 2;
-  opacity: 0;
   transform: translateX(100%);
 }
 
 .forward-from-right-enter-active {
   z-index: 2;
-  opacity: 1;
   transform: translateX(0);
   transition: all 300ms;
 }
 
 .forward-from-right-exit {
   z-index: 1;
-  opacity: 1;
 }
 
 .forward-from-right-exit-active {
   z-index: 1;
-  opacity: 0.3;
   transition: all 300ms;
 }
 
 .back-to-right-enter {
   z-index: 1;
-  opacity: 0.3;
 }
 
 .back-to-right-enter-active {
   z-index: 1;
-  opacity: 1;
   transform: translateX(0);
   transition: all 300ms;
 }
 
 .back-to-right-exit {
   z-index: 2;
-  opacity: 1;
   transform: translateX(0);
 }
 
 .back-to-right-exit-active {
   z-index: 2;
-  opacity: 0;
   transform: translate(100%);
   transition: all 300ms;
 }

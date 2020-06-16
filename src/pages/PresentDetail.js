@@ -1,9 +1,11 @@
 import React from 'react'
+import Button from './components/Button'
+import Title from './components/Title'
 
 export default class PresentDetail extends React.Component {
   componentDidMount() {
     // 打印通过路由传递的参数
-    console.log(this.props.location.query)
+    console.log('路由参数=>' + JSON.stringify(this.props.location.query))
   }
 
   goBack() {
@@ -13,9 +15,8 @@ export default class PresentDetail extends React.Component {
   render() {
     return (
       <div style={styles.container}>
-        <button style={styles.button} onClick={() => this.goBack()}>
-          回到Home
-        </button>
+        <Title title="Present动画页面" />
+        <Button title="回到Home首页" onClick={() => this.goBack()} />
       </div>
     )
   }
@@ -28,8 +29,6 @@ const styles = {
     height: '100vh',
     width: '100vw',
     overflow: 'hidden',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: 'column',
   },
-  button: { marginTop: 10 },
 }
