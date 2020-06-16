@@ -1,6 +1,4 @@
-### Router 使用手册{docsify-ignore}
-
-#### 概述
+#### 一、概述
 
 > [react-router-animation](https://github.com/JackXJR/react-router-animation)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单，只需要 `设置路由配置项`和 `添加 Router` 两步操作即可。此外，还增加了路由转场动画等扩展功能：
 >
@@ -10,17 +8,17 @@
 ![](./resources/test.gif)
 ![](./resources/test.gif)
 
-#### 1. 安装 Router
+#### 二、安装 Router
 
 ```
 npm install --save react-router-animation
 ```
 
-#### 2. 设置路由配置项
+#### 三、 设置路由配置项
 
 > 设置路由配置项 `RouterConfig.js`
 
-##### 代码演示
+##### 3.1 代码演示
 
 ```javascript
 import { Home, Detail, PushDetail, PresentDetail } from './pages/index'
@@ -58,7 +56,7 @@ export const RouterConfig = [
 ]
 ```
 
-##### 配置项说明
+##### 3.2 配置项说明
 
 | key | 说明 | 类型 | 默认值 | |
 | ---- | ---- | ---- | ---- ||
@@ -84,11 +82,11 @@ export const RouterConfig = [
 }
 ```
 
-#### 3. 添加 Router
+#### 四、添加 Router
 
 > 在入口文件`App.js`中添加`Router`
 
-##### 代码演示
+##### 4.1 代码演示
 
 ```javascript
 import React from 'react'
@@ -104,7 +102,7 @@ function App() {
 export default App
 ```
 
-##### API 说明
+##### 4.2 API 说明
 
 | 属性 | 说明 | 类型 | 默认值 | |
 | ---- | ---- | ---- | ---- ||
