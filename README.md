@@ -1,6 +1,6 @@
 #### 一、概述
 
-> [react-router-animation](https://github.com/JackXJR/react-router-animation)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单，只需要 `设置路由配置项`和 `添加 Router` 两步操作即可。此外，还增加了路由转场动画等扩展功能：
+> [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单，只需要 `设置路由配置项`和 `添加 Router` 两步操作即可。此外，还增加了路由转场动画等扩展功能：
 >
 > 1. 通过设置组件`Router`的属性`useBrowserRouter`，即可选择路由类型：HashRouter，BrowserRouter
 > 2. 通过设置路由配置项`RouterConfig.js`，即可选择路由转场过渡动画类型：无转场动画、从右到左翻开的 push 转场动画、从下到上弹起的 present 转场动画
@@ -8,7 +8,7 @@
 #### 二、安装 Router
 
 ```
-npm install --save react-router-animation
+npm install --save react-router-virgo
 ```
 
 #### 三、 设置路由配置项
