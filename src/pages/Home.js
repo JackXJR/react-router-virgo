@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from './components/Button'
 import Title from './components/Title'
+import { withRouter } from 'react-router-dom'
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   gotoPage(pathname, query) {
     this.props.history.push({ pathname, query })
   }
@@ -16,23 +17,31 @@ export default class Home extends React.Component {
       <div style={styles.container}>
         <Title title="Home首页" />
         <Button
-          title="无动画打开页面"
+          title="无动画"
           onClick={() => this.gotoPage('/detail/无动画')}
         />
         <Button
-          title="Push动画打开页面"
-          onClick={() => this.gotoPage('/push/detail/Present动画/1234')}
+          title="Push动画"
+          onClick={() => {
+            this.gotoPage('/push/detail/Push动画')
+          }}
         />
         <Button
-          title="Present动画打开页面"
-          onClick={() =>
-            this.gotoPage('/present/detail', { type: 'Present动画', id: 1234 })
-          }
+          title="Present动画"
+          onClick={() => {
+            this.gotoPage('/present/detail/Present动画')
+          }}
+        />
+        <Button
+          title="混合场景"
+          onClick={() => this.gotoPage('/push/hybrid-page')}
         />
       </div>
     )
   }
 }
+
+export default withRouter(Home)
 
 const styles = {
   container: {

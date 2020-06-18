@@ -5,9 +5,6 @@
 > 1. 通过设置组件`Router`的属性`useBrowserRouter`，即可选择路由类型：HashRouter，BrowserRouter
 > 2. 通过设置路由配置项`RouterConfig.js`，即可选择路由转场过渡动画类型：无转场动画、从右到左翻开的 push 转场动画、从下到上弹起的 present 转场动画
 
-![](./resources/test.gif)
-![](./resources/test.gif)
-
 #### 二、安装 Router
 
 ```

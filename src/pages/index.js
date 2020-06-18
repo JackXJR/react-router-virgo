@@ -1,6 +1,7 @@
-import Home from './Home'
-import Detail from './Detail'
-import PushDetail from './PushDetail'
-import PresentDetail from './PresentDetail'
+import Home from './Home';
+import Detail from './Detail';
+import PopPage from './PopPage';
+import ReplacePage from './ReplacePage';
+import HybridPage from './HybridPage';
 
-export { Home, Detail, PushDetail, PresentDetail }
+export { Home, Detail, ReplacePage, HybridPage, PopPage };
