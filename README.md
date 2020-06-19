@@ -145,6 +145,6 @@ yarn add react-router-dom react-transition-group
 
 ### 六. 其它
 
-更具体的信息大家感兴趣的话去看代码吧，如果发现 bug，请在 [git](https://github.com/JackXJR/react-router-virgo) 上提一个 issue，我会第一时间进行修复和优化
+更具体的信息大家感兴趣的话去看代码吧，如果发现 bug，请提一个[issue](https://github.com/JackXJR/react-router-virgo/issues)，我会第一时间进行修复和优化...
 
 > 欢迎使用，觉得不错请给一个小小的 star 鼓励一下~
