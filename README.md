@@ -1,19 +1,15 @@
-### react-router-virgo 使用手册
+## react-router-virgo 使用手册
 
-一行代码 + 一个路由配置文件，就可以实现 react-router 的功能，并让你的页面切换达到匹配 Native 路由的转场动画体验
+一行代码 + 一个路由配置文件，就可以实现 react-router 的功能，并让你的Web页面切换达到匹配 Native 路由的转场动画体验
 
-![Demo 演示](./resources/home.png ':size=320x568')
+### 一、概述
 
-#### 一、概述
+> [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单，只需要 `设置路由配置项`和 `添加 Router` 两步操作即可。此外，还增加了路由转场动画等扩展功能：
+>
+> 1. 通过设置组件`Router`的属性`useBrowserRouter`，即可选择路由类型：HashRouter，BrowserRouter
+> 2. 通过设置路由配置文件`RouterConfig.js`的`sceneConfig`，即可选择路由转场过渡动画类型：无转场动画、从右到左翻开的 push 转场动画、从下到上弹起的 present 转场动画
 
-- [详细文档](https://jackxjr.github.io/react-router-virgo/)
-- [Demo](https://github.com/JackXJR/react-router-virgo)
-  > [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单，只需要 `设置路由配置项`和 `添加 Router` 两步操作即可。此外，还增加了路由转场动画等扩展功能：
-  >
-  > 1. 通过设置组件`Router`的属性`useBrowserRouter`，即可选择路由类型：HashRouter，BrowserRouter
-  > 2. 通过设置路由配置文件`RouterConfig.js`的`sceneConfig`，即可选择路由转场过渡动画类型：无转场动画、从右到左翻开的 push 转场动画、从下到上弹起的 present 转场动画
-
-#### 二、安装 Router
+### 二、安装 Router
 
 ```
 ### 使用npm
@@ -23,11 +19,11 @@ npm install --save react-router-virgo
 yarn add react-router-virgo
 ```
 
-#### 三、 设置路由配置项
+### 三、 设置路由配置项
 
 > 设置路由配置项 `RouterConfig.js`
 
-##### 3.1 代码演示
+#### 3.1 代码演示
 
 ```javascript
 import { Home, Detail, PushDetail, PresentDetail } from './pages/index';
@@ -65,7 +61,7 @@ export const RouterConfig = [
 ];
 ```
 
-##### 3.2 配置项说明
+#### 3.2 配置项说明
 
 | key           | 说明                                                                              | 类型   | 默认值                                    |      |
 | ------------- | --------------------------------------------------------------------------------- | ------ | ----------------------------------------- | ---- |
@@ -95,7 +91,7 @@ export const RouterConfig = [
 
 > 在入口文件`App.js`中添加`Router`
 
-##### 4.1 代码演示
+#### 4.1 代码演示
 
 ```javascript
 import React from 'react';
@@ -111,7 +107,7 @@ function App() {
 export default App;
 ```
 
-##### 4.2 API 说明
+#### 4.2 API 说明
 
 | 属性                | 说明                                                   | 类型  | 默认值 |      |
 | ------------------- | ------------------------------------------------------ | ----- | ------ | ---- |
@@ -121,7 +117,7 @@ export default App;
 
 如果
 
-#### 五. 常见问题
+### 五. 常见问题
 
 > Q：支持哪些路由类型？
 
@@ -140,15 +136,15 @@ export default App;
 确认下项目里是否有 `react-router-dom`、`react-transition-group` 这 2 个依赖，如果没有，请通过 yarn 或者 npm 引入依赖
 
 ```
-npm i react-router-dom react-transition-group
+yarn add react-router-dom react-transition-group
 ```
 
 > Q：是否支持 ts 开发的项目
 
 后续迭代会支持
 
-#### 六. 其它
+### 六. 其它
 
-更具体的信息大家感兴趣的话去看代码吧，如果发现 bug， 请在 [git](https://github.com/JackXJR/react-router-virgo) 上提一个 issue...
+更具体的信息大家感兴趣的话去看代码吧，如果发现 bug，请在 [git](https://github.com/JackXJR/react-router-virgo) 上提一个 issue，我会第一时间进行修复和优化
 
 > 欢迎使用，觉得不错请给一个小小的 star 鼓励一下~
