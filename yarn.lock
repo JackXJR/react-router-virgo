@@ -8577,10 +8577,10 @@ react-router-dom@^5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router-virgo@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.npm.taobao.org/react-router-virgo/download/react-router-virgo-0.1.6.tgz#020e6bae20fc79336281baac02fe60703336f1d0"
-  integrity sha1-Ag5rriD8eTNigbqsAv5gcDM28dA=
+react-router-virgo@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.npm.taobao.org/react-router-virgo/download/react-router-virgo-0.1.8.tgz#da5b196d3ff156310ecbc1ccdd29f29b491732d9"
+  integrity sha1-2lsZbT/xVjEOy8HM3Snym0kXMtk=
 
 react-router@5.2.0:
   version "5.2.0"

@@ -3,7 +3,8 @@
 }
 
 /**
- * 无动画切换
+ * No animation transition
+ * 无动画转场切换
  */
 .forward-no-animation-enter {
   opacity: 1;
@@ -38,6 +39,7 @@
 }
 
 /**
+ * Fade in right, fade out right
  * 右侧淡入，右侧淡出
  */
 .forward-from-right-enter {
@@ -101,6 +103,7 @@
 }
 
 /**
+ * Fade in below, fade out below 
  * 下方淡入，下方淡出
  */
 .forward-from-bottom-enter {

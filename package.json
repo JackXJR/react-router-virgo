@@ -6,7 +6,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-router-virgo": "^0.1.6",
+    "react-router-virgo": "^0.1.8",
     "react-transition-group": "^4.4.1"
   },
   "devDependencies": {

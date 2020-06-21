@@ -1,5 +1,5 @@
-import { SceneConfig } from 'react-router-virgo'
-// import { SceneConfig } from './router/Router'
+// import { SceneConfig } from 'react-router-virgo'
+import { SceneConfig } from './router/Router'
 import { Home, Detail, PopPage, ReplacePage, HybridPage } from './pages/index'
 
 // 无转场动画（新页面直接覆盖当前页面）
