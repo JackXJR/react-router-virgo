@@ -1,15 +1,9 @@
 import React from 'react'
-import Button from './components/Button'
-import Title from './components/Title'
-import { withRouter } from 'react-router-dom'
+import { Button, Title } from './components'
 
 class Home extends React.Component {
   gotoPage(pathname, query) {
     this.props.history.push({ pathname, query })
-  }
-
-  componentDidMount() {
-    console.log('Home首页加载完成')
   }
 
   render() {
@@ -41,7 +35,7 @@ class Home extends React.Component {
   }
 }
 
-export default withRouter(Home)
+export default Home
 
 const styles = {
   container: {

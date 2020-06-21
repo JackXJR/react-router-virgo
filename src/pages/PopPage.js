@@ -1,32 +1,25 @@
-import React from 'react';
-import Button from './components/Button';
-import Title from './components/Title';
-import { withRouter } from 'react-router-dom';
+import React from 'react'
+import { Button, Title } from './components'
 
 class PopPage extends React.Component {
-  componentDidMount() {
-    // 打印通过路由传递的参数
-    console.log('路由参数=>' + JSON.stringify(this.props.match.params));
-  }
-
   pushPage(pathname, query) {
-    this.props.history.push({ pathname, query });
+    this.props.history.push({ pathname, query })
   }
 
   replacePage(pathname, query) {
-    this.props.history.replace({ pathname, query });
+    this.props.history.replace({ pathname, query })
   }
 
   goBack() {
-    this.props.history.goBack();
+    this.props.history.goBack()
   }
 
   go(num) {
-    this.props.history.go(num);
+    this.props.history.go(num)
   }
 
   href(pathname) {
-    window.location.href = pathname;
+    window.location.href = pathname
   }
 
   render() {
@@ -38,11 +31,11 @@ class PopPage extends React.Component {
         <Button title="props.history.go(-2)" onClick={() => this.go(-2)} />
         <Button title="window.location.href" onClick={() => this.href('/')} />
       </div>
-    );
+    )
   }
 }
 
-export default withRouter(PopPage);
+export default PopPage
 
 const styles = {
   container: {
@@ -53,4 +46,4 @@ const styles = {
     overflow: 'hidden',
     flexDirection: 'column',
   },
-};
+}

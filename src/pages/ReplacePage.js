@@ -1,13 +1,7 @@
 import React from 'react';
-import Button from './components/Button';
-import Title from './components/Title';
+import { Button, Title, Toast } from './components';
 
-export default class Detail extends React.Component {
-  componentDidMount() {
-    // 打印通过路由传递的参数
-    console.log('路由参数=>' + JSON.stringify(this.props.match.params));
-  }
-
+export default class ReplacePage extends React.Component {
   goBack() {
     this.props.history.goBack();
   }
@@ -31,14 +25,11 @@ export default class Detail extends React.Component {
             window.history.replaceState({}, '', '/#/push/pop-page')
           }
         />
+        <Toast title={'页面正在加载中...'} />
       </div>
     );
   }
 }
-
-// this.props.history.push('/page1')
-// window.history.replaceState({}, '', '/#/home?a=1')
-// window.history.pushState({}, '', '/#/home?a=1')}
 
 const styles = {
   container: {

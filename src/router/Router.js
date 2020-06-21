@@ -1,10 +1,10 @@
-import React from 'react';
-import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
-import AnimatedSwitch from './AnimatedSwitch';
-import StackSwitch from './StackSwitch';
-import { WrappedRoute } from './WrappedRoute';
+import React from 'react'
+import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom'
+import AnimatedSwitch from './AnimatedSwitch'
+import StackSwitch from './StackSwitch'
+import { WrappedAnimatedRoute } from './WrapedComp'
 
-const PropTypes = require('prop-types');
+const PropTypes = require('prop-types')
 
 // 动画类型配置
 export const SceneConfig = {
@@ -25,7 +25,7 @@ export const SceneConfig = {
     enter: 'from-bottom',
     exit: 'to-bottom',
   },
-};
+}
 
 class Router extends React.Component {
   static propTypes = {
@@ -37,7 +37,7 @@ class Router extends React.Component {
     useStackSwitch: PropTypes.bool,
     // 路由配置表
     routerConfig: PropTypes.array.isRequired,
-  };
+  }
 
   render() {
     const {
@@ -45,31 +45,34 @@ class Router extends React.Component {
       useAnimatedSwitch = true,
       useStackSwitch = false,
       routerConfig = [],
-    } = this.props;
+    } = this.props
 
-    const CommonRouter = useBrowserRouter ? BrowserRouter : HashRouter;
+    const CommonRouter = useBrowserRouter ? BrowserRouter : HashRouter
     const CommonSwitch = useStackSwitch
       ? StackSwitch
       : useAnimatedSwitch
       ? AnimatedSwitch
-      : Switch;
+      : Switch
+
     return (
       <CommonRouter>
         <CommonSwitch {...this.props}>
-          {routerConfig.map((config, index) => {
-            return (
-              <Route
-                exact
-                key={index}
-                {...config}
-                component={WrappedRoute(config.component)}
-              />
-            );
-          })}
+          {useStackSwitch
+            ? null
+            : routerConfig.map((config, index) => {
+                return (
+                  <Route
+                    exact
+                    key={index}
+                    {...config}
+                    component={WrappedAnimatedRoute(config.component)}
+                  />
+                )
+              })}
         </CommonSwitch>
       </CommonRouter>
-    );
+    )
   }
 }
 
-export default Router;
+export default Router

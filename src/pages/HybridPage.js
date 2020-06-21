@@ -1,15 +1,9 @@
-import React from 'react';
-import Button from './components/Button';
-import Title from './components/Title';
+import React from 'react'
+import { Button, Title } from './components'
 
-export default class Detail extends React.Component {
-  componentDidMount() {
-    // 打印通过路由传递的参数
-    console.log('路由参数=>' + JSON.stringify(this.props.match.params));
-  }
-
+class HybridPage extends React.Component {
   goBack() {
-    this.props.history.goBack();
+    this.props.history.goBack()
   }
   /**
    * 可以给某一个页面同时配置多种动画，以 PopPage 为例
@@ -36,9 +30,11 @@ export default class Detail extends React.Component {
           onClick={() => this.props.history.push('/present/pop-page')}
         />
       </div>
-    );
+    )
   }
 }
+
+export default HybridPage
 
 const styles = {
   container: {
@@ -49,4 +45,4 @@ const styles = {
     overflow: 'hidden',
     flexDirection: 'column',
   },
-};
+}

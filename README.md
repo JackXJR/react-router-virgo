@@ -1,6 +1,6 @@
 ## react-router-virgo 使用手册
 
-一行代码 + 一个路由配置文件，就可以实现 react-router 的功能，并让你的Web页面切换达到匹配 Native 路由的转场动画体验
+一行代码 + 一个路由配置文件，就可以实现 react-router 的功能，并让你的 Web 页面切换达到媲美 Native 路由的转场动画体验
 
 ### 一、概述
 
@@ -26,14 +26,14 @@ yarn add react-router-virgo
 #### 3.1 代码演示
 
 ```javascript
-import { Home, Detail, PushDetail, PresentDetail } from './pages/index';
+import { Home, Detail } from './pages/index'
 
 // 例举了无动画、push转场动画、present转场动画三种场景
 export const RouterConfig = [
   { path: '/', component: Home },
   // 无转场动画（新页面直接覆盖当前页面）
   {
-    path: '/detail/:type',
+    path: '/detail',
     component: Detail,
     sceneConfig: {
       enter: 'no-animation',
@@ -42,8 +42,8 @@ export const RouterConfig = [
   },
   // push 转场动画（打开时，从左往右覆盖；关闭时，从右往左收回）
   {
-    path: '/push/detail/:type/:id',
-    component: PushDetail,
+    path: '/push/detail',
+    component: Detail,
     sceneConfig: {
       enter: 'from-right',
       exit: 'to-right',
@@ -52,13 +52,13 @@ export const RouterConfig = [
   // present 转场动画（打开时，从下往上弹起；关闭时，从上往下收起）
   {
     path: '/present/detail',
-    component: PresentDetail,
+    component: Detail,
     sceneConfig: {
       enter: 'from-bottom',
       exit: 'to-bottom',
     },
   },
-];
+]
 ```
 
 #### 3.2 配置项说明
@@ -94,17 +94,17 @@ export const RouterConfig = [
 #### 4.1 代码演示
 
 ```javascript
-import React from 'react';
-import Router from './router/Router';
-import { RouterConfig } from './RouterConfig';
-import './index.css';
+import React from 'react'
+import Router from './router/Router'
+import { RouterConfig } from './RouterConfig'
+import './index.css'
 
 function App() {
   // RouterConfig 为路由配置文件
-  return <Router routerConfig={RouterConfig} />;
+  return <Router routerConfig={RouterConfig} />
 }
 
-export default App;
+export default App
 ```
 
 #### 4.2 API 说明
@@ -147,4 +147,4 @@ yarn add react-router-dom react-transition-group
 
 更具体的信息大家感兴趣的话去看代码吧，如果发现 bug，请提一个[issue](https://github.com/JackXJR/react-router-virgo/issues)，我会第一时间进行修复和优化...
 
-> 欢迎使用，觉得不错请给一个小小的 star 鼓励一下~
+> 欢迎使用，觉得不错请给一个小小的 `star` 鼓励一下~

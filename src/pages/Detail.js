@@ -1,7 +1,5 @@
 import React from 'react'
-import Button from './components/Button'
-import Title from './components/Title'
-import { withRouter } from 'react-router-dom'
+import { Button, Title } from './components'
 
 const PageType = {
   PUSH: 'PUSH',
@@ -25,10 +23,6 @@ class Detail extends React.Component {
       // Present 动画页面
       this.pageType = PageType.PRESENT
     }
-  }
-
-  componentDidMount() {
-    console.log('Detail')
   }
 
   goBack() {
@@ -78,7 +72,7 @@ class Detail extends React.Component {
   }
 }
 
-export default withRouter(Detail)
+export default Detail
 
 const styles = {
   container: {
