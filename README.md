@@ -72,7 +72,7 @@ export const RouterConfig = [
 
 #### 3.2 RouterConfig Description 配置项说明
 
-| key           | description                                                                                                                                                                                                                                          | type   | default value                             |            |
+| key           | description                                                                                                                                                                                                                                          | type   | default                             |            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------- | ---------- |
 | `path`        | The routing path can take parameters. The one after `/:` is a parameter, such as `/ detail /: id`. The parameter is id. 路由路径，可以带参数，在`/:`后的为参数，如 `/detail/:id`， 参数为 id                                                         | string |                                           | `Required` |
 | `component`   | Page components of route path mapping. 路由路径映射的页面组件                                                                                                                                                                                        | class  |                                           | `Required` |
@@ -128,7 +128,7 @@ export default App
 
 #### 4.2 API
 
-| props               | description                                                                                                                         | type  | default value |            |
+| props               | description                                                                                                                         | type  | default |            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------- | ---------- |
 | `routerConfig`      | Route configuration data. 路由配置数据                                                                                              | array | []            | `Required` |
 | `useBrowserRouter`  | Routing type `BrowserRouter/HashRouter`. By default, HashRouter is used. 路由类型 `BrowserRouter/HashRouter`，默认使用 `HashRouter` | bool  | false         | `Optional` |
