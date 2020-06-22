@@ -12,15 +12,25 @@ One line of code and one route configuration file, realize the function of `reac
 
 - 无转场动画
 
-![无转场动画](./docs/src/resources/no_animation.gif ':size=320x570')
+<div  align="center">    
+<img src="./docs/src/resources/no_animation.gif" width = "320" height = "570" div align=center />
+</div>
+
 
 - Push 转场动画
+
+<div  align="center">   
+<img src="./docs/src/resources/push_animation.gif" width = "320" height = "570" div align=center />
+</div>
 
 ![Push 转场动画](./docs/src/resources/push_animation.gif ':size=320x570')
 
 - Present 转场动画
 
-![Present 转场动画](./docs/src/resources/present_animation.gif ':size=320x570')
+<div  align="center">   
+<img src="./docs/src/resources/present_animation.gif" width = "320" height = "570" div align=center />
+</div>
+
 
 ### 二、Installation 安装
 
