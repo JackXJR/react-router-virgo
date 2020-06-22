@@ -1,4 +1,4 @@
-写过客户端的小伙伴，在写 web 页面的时候，都会觉得页面切换起来很生硬，作为一个从 iOS 开发转前端的我来说，尤其不能接受，因此，基于 react-router 的基础上，写了一个 Router 库 [react-router-virgo](https://github.com/JackXJR/react-router-virgo)，让使用者以极简的方式就可以使 Web 页面切换能达到原生路由切换的动画体验。
+在使用 React 开发 web 页面的时候，一般都会使用`react-router`来实现路由功能，相较于 native 路由流畅丝滑的体验，web 页面切换起来会很生硬。作为从 iOS 转前端的我来说，尤其不能接受，因此，在 react-router 的基础上，封装了一个 Router 库 [react-router-virgo](https://github.com/JackXJR/react-router-virgo)，让使用者只需要`一行代码 + 一个路由配置文件`就可以使 Web 页面切换能达到 native 路由切换的流畅体验。
 
 ### 一、react-router-virgo 简介
 
