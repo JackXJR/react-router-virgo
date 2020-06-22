@@ -1,4 +1,4 @@
-## react-router-virgo 使用手册
+## react-router-virgo 使用手册{docsify_ignore}
 
 One line of code and one route configuration file, realize the function of `react-router`, and match the transition animation effect of native route.
 
