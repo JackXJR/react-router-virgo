@@ -10,6 +10,10 @@ One line of code and one route configuration file, realize the function of `reac
 >
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`
 
+![无转场动画](./resources/no_animation.gif)
+![Push 转场动画](./resources/push_animation.gif)
+![Present 转场动画](./resources/present_animation.gif)
+
 ### 二、Installation 安装
 
 ```
@@ -72,7 +76,7 @@ export const RouterConfig = [
 
 #### 3.2 RouterConfig Description 配置项说明
 
-| key           | description                                                                                                                                                                                                                                          | type   | default                             |            |
+| key           | description                                                                                                                                                                                                                                          | type   | default                                   |            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------- | ---------- |
 | `path`        | The routing path can take parameters. The one after `/:` is a parameter, such as `/ detail /: id`. The parameter is id. 路由路径，可以带参数，在`/:`后的为参数，如 `/detail/:id`， 参数为 id                                                         | string |                                           | `Required` |
 | `component`   | Page components of route path mapping. 路由路径映射的页面组件                                                                                                                                                                                        | class  |                                           | `Required` |
@@ -129,10 +133,10 @@ export default App
 #### 4.2 API
 
 | props               | description                                                                                                                         | type  | default |            |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------- | ---------- |
-| `routerConfig`      | Route configuration data. 路由配置数据                                                                                              | array | []            | `Required` |
-| `useBrowserRouter`  | Routing type `BrowserRouter/HashRouter`. By default, HashRouter is used. 路由类型 `BrowserRouter/HashRouter`，默认使用 `HashRouter` | bool  | false         | `Optional` |
-| `useAnimatedSwitch` | Use transition animation or not. 是否使用转场过渡动画                                                                               | bool  | true          | `Optional` |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- | ---------- |
+| `routerConfig`      | Route configuration data. 路由配置数据                                                                                              | array | []      | `Required` |
+| `useBrowserRouter`  | Routing type `BrowserRouter/HashRouter`. By default, HashRouter is used. 路由类型 `BrowserRouter/HashRouter`，默认使用 `HashRouter` | bool  | false   | `Optional` |
+| `useAnimatedSwitch` | Use transition animation or not. 是否使用转场过渡动画                                                                               | bool  | true    | `Optional` |
 
 ### 五. FAQ 常见问题
 
