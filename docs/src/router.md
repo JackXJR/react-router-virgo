@@ -1,5 +1,3 @@
-## react-router-virgo 使用手册{docsify_ignore}
-
 One line of code and one route configuration file, realize the function of `react-router`, and match the transition animation effect of native route.
 
 一行代码 + 一个路由配置文件，就可以实现 `react-router` 的功能，并让你的 Web 页面切换媲美 Native 路由的转场动画体验
