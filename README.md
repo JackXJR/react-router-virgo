@@ -10,9 +10,17 @@ One line of code and one route configuration file, realize the function of `reac
 >
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`
 
-![无转场动画](./resources/no_animation.gif)
-![Push 转场动画](./resources/push_animation.gif)
-![Present 转场动画](./resources/present_animation.gif)
+- 无转场动画
+
+![无转场动画](./resources/no_animation.gif ':size=320x570')
+
+- Push 转场动画
+
+![Push 转场动画](./resources/push_animation.gif ':size=320x570')
+
+- Present 转场动画
+
+![Present 转场动画](./resources/present_animation.gif ':size=320x570')
 
 ### 二、Installation 安装
 
