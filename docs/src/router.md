@@ -72,7 +72,7 @@ export const RouterConfig = [
 
 #### 3.2 RouterConfig Description 配置项说明
 
-| key           | description                                                                                                                                                                                                                                          | type   | default value                             |            |
+| key           | description                                                                                                                                                                                                                                          | type   | default                             |            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------- | ---------- |
 | `path`        | The routing path can take parameters. The one after `/:` is a parameter, such as `/ detail /: id`. The parameter is id. 路由路径，可以带参数，在`/:`后的为参数，如 `/detail/:id`， 参数为 id                                                         | string |                                           | `Required` |
 | `component`   | Page components of route path mapping. 路由路径映射的页面组件                                                                                                                                                                                        | class  |                                           | `Required` |
@@ -108,6 +108,7 @@ export const RouterConfig = [
 ### 四、Use Router 使用路由
 
 > Add `Router` to entry file `App.js`
+>
 > 在入口文件`App.js`中添加`Router`
 
 #### 4.1 Example 代码演示
@@ -127,7 +128,7 @@ export default App
 
 #### 4.2 API
 
-| props               | description                                                                                                                         | type  | default value |            |
+| props               | description                                                                                                                         | type  | default |            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------- | ---------- |
 | `routerConfig`      | Route configuration data. 路由配置数据                                                                                              | array | []            | `Required` |
 | `useBrowserRouter`  | Routing type `BrowserRouter/HashRouter`. By default, HashRouter is used. 路由类型 `BrowserRouter/HashRouter`，默认使用 `HashRouter` | bool  | false         | `Optional` |
@@ -176,4 +177,5 @@ If you are interested in more specific information, go to the code. If you find 
 更具体的信息大家感兴趣的话去看代码吧，如果发现 bug，请提一个[issue](https://github.com/JackXJR/react-router-virgo/issues)，我会第一时间进行修复和优化...
 
 > Welcome to use, if you think it's good, please give a little `star` encouragement~
+>
 > 欢迎使用，觉得不错请给一个小小的 `star` 鼓励一下~
