@@ -9,24 +9,10 @@ One line of code and one route configuration file, realize the function of `reac
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo) is a router with secondary encapsulation based on `react-router`, which makes the integrated routing function extremely simple. In addition, the extended functions such as route transition animation are added: `No transition animation`, `push transition animation`, `present transition animation`
 >
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`
-
-- 无转场动画
-
-<div  align="center">    
-   <img src="./docs/src/resources/no_animation.gif" width = "320" height = "570" align=center />
-</div>
-
-- Push 转场动画
-
 <div  align="center">   
 <img src="./docs/src/resources/push_animation.gif" width = "320" height = "570" align=center />
 </div>
 
-- Present 转场动画
-
-<div  align="center">   
-<img src="./docs/src/resources/present_animation.gif" width = "320" height = "570" align=center />
-</div>
 
 ### 二、Installation 安装
 
