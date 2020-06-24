@@ -4,11 +4,15 @@ One line of code and one route configuration file, realize the function of `reac
 
 一行代码 + 一个路由配置文件，就可以实现 `react-router` 的功能，并让你的 Web 页面切换媲美 Native 路由的转场动画体验
 
+> 这里主要介绍怎么使用react-router-virgo，对实现原理感兴趣的小伙伴，可以去看我的这篇[技术博客](https://juejin.im/post/5eec73a5518825658d034976)
+
+----
+
 ### 一、Brief Introduction 概述
 
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo) is a router with secondary encapsulation based on `react-router`, which makes the integrated routing function extremely simple. In addition, the extended functions such as route transition animation are added: `No transition animation`, `push transition animation`, `present transition animation`
 >
-> [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`
+> [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`，我们先来看看效果吧
 
 - 无转场动画（现有的 web 页面切换体验）
 
