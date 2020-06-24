@@ -9,9 +9,20 @@ One line of code and one route configuration file, realize the function of `reac
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo) is a router with secondary encapsulation based on `react-router`, which makes the integrated routing function extremely simple. In addition, the extended functions such as route transition animation are added: `No transition animation`, `push transition animation`, `present transition animation`
 >
 > [react-router-virgo](https://github.com/JackXJR/react-router-virgo)是在 react-router 的基础上进行二次封装的 Router，使集成路由功能变得极其简单。此外，还增加了路由转场动画等扩展功能：`无转场动画`, `Push 转场动画`, `Present 转场动画`
-<div  align="center">   
+
+- 无转场动画（现有的 web 页面切换体验）
+
+<img src="https://user-gold-cdn.xitu.io/2020/6/24/172e3ef5f74aee14?w=640&h=1164&f=gif&s=309669" width = "320" height = "570" align=center />
+
+- push 动画切换（右侧淡入，右侧淡出）
+
 <img src="https://user-gold-cdn.xitu.io/2020/6/24/172e3ee104ac73b3?w=640&h=1164&f=gif&s=410920" width = "320" height = "570" align=center />
-</div>
+    
+- present 动画切换（下方淡入，下方淡出的模态切换）
+
+<img src="https://user-gold-cdn.xitu.io/2020/6/24/172e3eef9400592a?w=640&h=1164&f=gif&s=408635" width = "320" height = "570" align=center />
+
+> 总体上，基本能达到 native 路由的切换体验，当然，毕竟是 web 页面，相对于 iOS 的原生的 native 路由体验还是有点差距，感兴趣的可以自己运行完整 demo 体验下。。。
 
 
 ### 二、Installation 安装
